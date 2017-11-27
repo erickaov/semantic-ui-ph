@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <script src="javascript/jquery-3.1.1.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="javascript/main.js"></script>
+    </head>
+    <body>
+        <div class="main ui container">
+            <! ---------- HEADER WITH IMG ---------- >
+            <h2 class="ui header">
+              <img class="ui image" src="images/icons/cool.png">
+              <div class="content">Cool Components</div>
+            </h2>
+
+            <! ---------- TABS ---------- >
+            <div class="ui top attached tabular menu">
+              <a class="active item" data-tab="reveal">Reveal</a>
+              <a class="item" data-tab="shape">Shape</a>
+              <a class="item" data-tab="button">Button</a>
+            </div>
+            <div class="ui bottom attached active tab segment" data-tab="reveal">
+                <div class="ui two column grid">
+                  <div class="row">
+                    <div class="column">
+                        <h2 class="ui header">Right</h2>
+
+                        <! ---------- REVEAL (RIGHT) ---------- >
+                        <div class="ui large image move right reveal">
+                          <div class="visible content">
+                            <img src="images/no-image.png" class="ui large image">
+                          </div>
+                          <div class="hidden content">
+                            <img src="images/thailand.jpg" class="ui large image">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui header">Rotate</h2>
+
+                        <! ---------- REVEAL (ROTATE) ---------- >
+                        <div class="ui large circular rotate left reveal image">
+                          <img src="images/no-image-square.png" class="visible content">
+                          <img src="images/france.png" class="hidden content">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="shape">
+              Shape
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="button">
+              Labeled and Inverted Button, Conditional
+            </div>
+        </div>
+    </body>
+</html>
