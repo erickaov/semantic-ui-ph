@@ -2,11 +2,12 @@
     <html>
     <head>
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <script src="javascript/jquery-3.1.1.min.js"></script>
         <script src="semantic/dist/semantic.min.js"></script>
         <script src="javascript/main.js"></script>
     </head>
-    <body>
+    <body class="power-hour">
         <div class="main ui container">
             <! ---------- HEADER WITH IMG ---------- >
             <h2 class="ui header">
@@ -19,7 +20,9 @@
               <a class="active item" data-tab="reveal">Reveal</a>
               <a class="item" data-tab="shape">Shape</a>
               <a class="item" data-tab="button">Button</a>
+                <a class="item" data-tab="modal">Basic Modal</a>
             </div>
+            
             <div class="ui bottom attached active tab segment" data-tab="reveal">
                 <div class="ui two column grid">
                   <div class="row">
@@ -48,11 +51,90 @@
                   </div>
                 </div>
             </div>
+            
             <div class="ui bottom attached tab segment" data-tab="shape">
-              Shape
+                <div class="ui two column grid">
+                    <div class="row">
+                        <div class="column">
+                              <! ---------- SHAPE ---------- >
+                              <div class="ui cities shape">
+                                  <div class="sides">
+                                    <div class="side active">
+                                      <div class="ui card">
+                                        <div class="image">
+                                          <img src="images/toronto.jpg">
+                                        </div>
+                                        <div class="content">
+                                          <div class="header">Toronto, Canada</div>
+                                          <div class="description">
+                                            Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="side">
+                                      <div class="ui card">
+                                        <div class="image">
+                                          <img src="images/montreal.jpg">
+                                        </div>
+                                        <div class="content">
+                                          <a class="header">Montreal, Canada</a>
+                                          <div class="description">
+                                            Montreal is the largest city in Canada's Québec province, and it's named after Mt. Royal.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>                      
+                                  </div>
+                                </div>
+
+                                <div class="ui ignored divider"></div>
+
+                                <div class="ui ignored icon direction buttons">
+                                    <div class="ui button flip-left" title="Flip Left">
+                                        <i class="left long arrow icon"></i>
+                                    </div>
+                                    <div class="ui button flip-up" title="Flip Up">
+                                        <i class="up long arrow icon"></i>
+                                    </div>
+                                    <div class="ui icon button flip-down" title="Flip Down">
+                                        <i class="down long arrow icon"></i>
+                                      </div>
+                                    <div class="ui icon button flip-right" title="Flip Right">
+                                        <i class="right long arrow icon"></i>
+                                    </div>
+                                </div>
+
+                                <div class="ui ignored icon direction buttons">
+                                    <div class="ui button flip-over" title="Flip Over">
+                                        <i class="retweet icon"></i>
+                                    </div>
+                                    <div class="ui button flip-back" title="Flip Back">
+                                        <i class="flipped retweet icon"></i>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui info ignored icon message">
+                                <i class="info letter icon"></i>
+                                <div class="content">
+                                  <ul class="ui list large">
+                                    <li>Must have defined width and heights for each side, otherwise text flow may change during animation</li>
+                                    <li>Uses 3D transformations, which are currently only supported in modern versions of Chrome, Firefox, IE and Safari</li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div class="ui bottom attached tab segment" data-tab="button">
               Labeled and Inverted Button, Conditional
+            </div>
+            
+            <div class="ui bottom attached tab segment" data-tab="modal">
+              Basic Modal
             </div>
         </div>
     </body>
