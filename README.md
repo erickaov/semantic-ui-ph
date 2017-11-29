@@ -8,7 +8,15 @@ Download the project on Github (https://github.com/erickaov/semantic-ui-ph).
 
 ### Prerequisites
 
-You need Node JS installed on your machine.
+- You need Node JS installed on your machine (http://www.nodejs.org/).
+- Install Gulp (NPM module that must be installed globally)
+
+`npm install -g gulp`
+
+- Build Semantic UI
+
+`cd semantic/
+ gulp build`
 
 ## Built With
 
