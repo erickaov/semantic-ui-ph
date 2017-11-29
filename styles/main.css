@@ -1,3 +1,11 @@
 .power-hour {
     padding-top: 2em;
 }
+
+.spacing-bottom {
+    margin-bottom: 2em;
+}
+
+.buttons-example .button {
+    margin-bottom: 1em;
+}

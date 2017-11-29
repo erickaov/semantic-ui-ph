@@ -15,8 +15,8 @@ Download the project on Github (https://github.com/erickaov/semantic-ui-ph).
 
 - Build Semantic UI
 
-`cd semantic/
- gulp build`
+`cd semantic/`
+`gulp build`
 
 ## Built With
 
