@@ -32,4 +32,23 @@ $(document).ready(function () {
     $(".flip-back").on("click", function () {
         $(".shape").shape("flip back");
     });
+    
+    /*
+     * Open basic modal
+     */    
+    $(".open-modal").on("click", function () {
+        $('.ui.basic.modal').modal('show');
+    });
+    
+    /*
+     * Transitions
+     */
+    $(".animate-jiggle").on("click", function () {
+        $(".sequenced.images .image")
+          .transition({
+            animation: "jiggle",
+            duration: 500,
+            interval: 200
+        });
+    });
 });

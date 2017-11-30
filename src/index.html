@@ -11,7 +11,7 @@
         <div class="main ui container">
             <! ---------- HEADER WITH IMG ---------- >
             <h2 class="ui header">
-              <img class="ui image" src="images/icons/cool.png">
+              <img class="ui image" src="images/cool.png">
               <div class="content">Cool Components</div>
             </h2>
 
@@ -20,7 +20,8 @@
               <a class="active item" data-tab="reveal">Reveal</a>
               <a class="item" data-tab="shape">Shape</a>
               <a class="item" data-tab="button">Button</a>
-                <a class="item" data-tab="modal">Basic Modal</a>
+              <a class="item" data-tab="modal">Basic Modal</a>
+              <a class="item" data-tab="transition">Transition</a>
             </div>
             
             <div class="ui bottom attached active tab segment" data-tab="reveal">
@@ -30,7 +31,7 @@
                         <h2 class="ui header">Right</h2>
 
                         <! ---------- REVEAL (RIGHT) ---------- >
-                        <div class="ui large image move right reveal">
+                        <div class="ui large move right reveal image">
                           <div class="visible content">
                             <img src="images/no-image.png" class="ui large image">
                           </div>
@@ -199,7 +200,41 @@
             </div>
             
             <div class="ui bottom attached tab segment" data-tab="modal">
-              Basic Modal
+              <button class="ui pink button open-modal">Find out how the modal looks</button>
+                
+              <! ---------- BASIC MODAL ---------- >
+              <div class="ui basic modal">
+                  <div class="ui icon header">
+                    <img src="images/panda.png" class="icon">
+                    Meeting a Panda
+                  </div>
+                  <div class="content center">
+                    <p>Look at this cute panda, would you like to meet Lun Lun?</p>
+                  </div>
+                  <div class="actions">
+                    <div class="ui red basic cancel inverted button">
+                      <i class="remove icon"></i>
+                      No
+                    </div>
+                    <div class="ui green ok inverted button">
+                      <i class="checkmark icon"></i>
+                      Yes, please!
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="ui bottom attached tab segment" data-tab="transition">
+                <div class="spacing-bottom">
+                    <button class="ui blue basic button animate-jiggle">Jiggle</button>
+                </div>
+                    
+                <! ---------- TRANSITION ---------- >
+                <div class="ui medium sequenced images">
+                  <img src="images/up.jpg" class="ui circular image">
+                  <img src="images/angry-birds.jpg" class="ui circular image">
+                  <img src="images/zootopia.jpeg" class="ui circular image">
+                </div>
             </div>
         </div>
     </body>
